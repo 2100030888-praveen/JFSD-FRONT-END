@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theme Changer</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  .circle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 80%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .moon-icon {
+    font-size: 39px; /* Adjust the size as needed */
+  }
+</style>
+</head>
+<body>
+
+<button class="circle-button" id="themeButton"><i class="fas fa-moon moon-icon"></i></button>
+
+<script>
+  const themeButton = document.getElementById('themeButton');
+  let isDarkTheme = false;
+
+  themeButton.addEventListener('click', () => {
+    isDarkTheme = !isDarkTheme;
+    document.body.style.backgroundColor = isDarkTheme ? '#333' : '#f0f0f0';
+    themeButton.style.backgroundColor = isDarkTheme ? '#e74c3c' : '#3498db';
+  });
+</script>
+
+</body>
+</html>
