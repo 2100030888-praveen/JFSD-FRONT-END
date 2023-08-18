@@ -1,6 +1,6 @@
 html,
 body {
-  height: 50%;
+  height: 350%;
   overflow: hidden;
 }
 
@@ -12,7 +12,7 @@ body {
 body {
   display: grid;
   place-content: center;
-  background-color: brown;
+  background-color: whitesmoke;
 }
 
 nav {
