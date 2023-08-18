@@ -9,11 +9,7 @@ body {
   font-family: Itim, sans-serif;
 }
 
-body {
-  display: grid;
-  place-content: center;
-  background-color: brown;
-}
+
 
 nav {
   position: relative;
@@ -57,4 +53,17 @@ a {
 
 a.active {
   color: #ff2;
+}
+
+.button {
+  background-color: #60e2eb;
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 3px 2px;
+  cursor: pointer;
+  border-radius: 16px;
 }
