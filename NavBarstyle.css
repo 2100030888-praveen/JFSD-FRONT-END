@@ -1,6 +1,6 @@
 html,
 body {
-  height: 50%;
+  height: 350%;
   overflow: hidden;
 }
 
@@ -9,7 +9,15 @@ body {
   font-family: Itim, sans-serif;
 }
 
+<<<<<<< HEAD
 
+=======
+body {
+  display: grid;
+  place-content: center;
+  background-color: whitesmoke;
+}
+>>>>>>> a46d7e8c3c0fee386db2014eee5cf65490e112e9
 
 nav {
   position: relative;
